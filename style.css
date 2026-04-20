@@ -1,0 +1,103 @@
+
+
+header {
+    background-image: url("imgs/header.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+html {
+    scroll-padding-top: 70px;
+}
+
+nav {
+    height: 70px;
+}
+
+nav > a {
+    letter-spacing: 4px;
+}
+
+
+
+h1 {
+    text-shadow: 0 0 10px black;
+    letter-spacing: 2px;
+}
+
+a.explore {
+    transition: transform 0.3s ease;
+}
+
+a.explore:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+
+section#about > p {
+    column-count: 3;
+    column-gap: 20px;
+    text-align: justify;
+  
+}
+
+@media only screen and (max-width: 768px) {
+    section#about > p {
+        column-count: 1;
+    }
+}
+
+.servicediv {
+    padding: 20px;
+}
+
+.servicediv > * {
+    text-shadow: 0 0 10px black;
+    border: 2px solid transparent;
+}
+
+.servicediv > h3, p {
+    z-index: 20;
+}
+
+.servicediv > img {
+    filter: brightness(0.7);
+    transition: border 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 0 20px black;
+    cursor: pointer;
+}
+
+.servicediv > img:hover {
+    transition: border 0.3s ease, filter 0.3s ease;
+    filter: brightness(1);
+}
+
+.yazi {
+    transform: scale(0.95);
+    transition: transform 0.4s ease;
+}
+
+.yazianimasyonu {
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+
+img {
+    filter: brightness(0.9);
+}
+
+img.imganim {
+    filter: brightness(1);
+    transition: filter 0.3s ease;
+}
+
+#slider {
+    transition: all 0.5s ease;
+}
+
+#slider > a:hover {
+
+    transition: all 0.5s ease;
+    transform: translateX(5px);
+}

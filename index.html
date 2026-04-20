@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-slate-200 max-w-screen overflow-x-hidden p-0 m-0">
+
+    <i class="bi bi-list text-white text-5xl fixed top-4 right-4 z-50 md:hidden"></i>
+
+    <div id="slider" class="md:hidden transition transition-all duration-400 z-50 -left-full text-3xl bg-black text-white fixed top-0 h-fit w-8/12 flex flex-col justify-center items-center">
+        <a href="#" class="hover:text-red-500 h-16 w-full pl-4 py-4 flex justify-start items-center">Home</a>
+        <a href="#about" class="hover:text-red-500 h-16 w-full pl-4 py-4 flex justify-start items-center">About</a>
+        <a href="#services" class="hover:text-red-500 h-16 w-full pl-4 py-4 flex justify-start items-center">Services</a>
+        <a href="#contact" class="hover:text-red-500 h-16 w-full pl-4 py-4 flex justify-start items-center">Contact</a>
+    </div>
+
+    <script>
+        $(".bi-list").click(function() {
+            $(this).toggleClass("bi-list bi-x");
+            $("#slider").toggleClass("-left-full, left-0");
+        });
+    </script>
+
+    <nav class="px-8 fixed top-0 left-0 z-50 bg-black/40 w-screen hidden md:flex flex-row justify-center items-center text-white text-xl gap-12">
+        <i class="bi bi-alexa text-3xl mr-auto text-red-500"></i>
+        <a href="#" class="hover:text-red-500 h-16 pl-4 py-4 flex justify-start items-center">Home</a>
+        <a href="#about" class="hover:text-red-500 h-16 pl-4 py-4 flex justify-start items-center">About</a>
+        <a href="#services" class="hover:text-red-500 h-16 pl-4 py-4 flex justify-start items-center">Services</a>
+        <a href="#contact" class="hover:text-red-500 h-16 pl-4 py-4 flex justify-start items-center">Contact</a>
+        <div class="ml-auto"></div>
+        
+    </nav>
+
+    <header class="h-screen w-screen flex flex-col text-white justify-center items-center text-center gap-10">
+            <h1 class="yazi w-8/12 text-3xl md:text-6xl font-bold">Lorem, ipsum <span class="text-red-500">dolor</span> sit amet consectetur adipisicing elit.</h1>
+            <p class="yazi w-8/12 md:w-fit p-2 bg-white/50 tracking-wider text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ad.</p>
+            <a href="#" class="explore rounded-xl hover:shadow-2xl hover:shadow-black bg-red-500 font-bold tracking-wider text-white py-2 px-4">Explore</a>
+    </header>
+
+    <section id="about" class="h-fit max-w-screen flex flex-col justify-start items-center pt-10 gap-4">
+
+        <h2 class="yazi text-2xl md:text-5xl text-red-500 mt-0 font-bold tracking-wider mb-4">ABOUT US</h2>
+
+        <div class="h-fit md:h-[400px] w-10/12 flex flex-col md:flex-row justify-center items-center gap-4">
+        <img src="imgs/about/about1.jpeg" class="shadow-2xl shadow-black h-full w-full md:w-1/2" alt="Header Image">
+        <img src="imgs/about/about2.jpeg" class="shadow-2xl shadow-black h-full w-full md:w-1/2" alt="Header Image">
+        </div>
+
+       <p class="yazi w-10/12 p-8 text-xs md:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolore laborum alias consequuntur eos, deleniti, facilis placeat eaque fugiat sequi illo nobis sit ullam id ratione, quia suscipit asperiores vel voluptates dicta beatae? Ipsam facere dignissimos tempore quia adipisci laborum excepturi soluta provident? Asperiores perspiciatis voluptatum, laboriosam harum impedit incidunt placeat nobis repellendus minus explicabo illum vitae quae consequatur nisi sapiente exercitationem consectetur maiores, ut doloremque aut magni iste recusandae vero. Ut sequi id eaque voluptatum ipsam doloremque est numquam exercitationem iure accusamus quae maiores officiis quia suscipit consequatur aliquam amet, quas nesciunt harum voluptatem perferendis natus voluptate! Mollitia sapiente expedita repellendus libero aliquid repudiandae incidunt quo reprehenderit dolorem odit itaque, deleniti necessitatibus debitis id beatae accusantium quisquam vitae nemo quae? Rem beatae doloremque porro recusandae nam distinctio optio et quidem necessitatibus, minus eveniet nulla dolorem nemo reiciendis. Enim animi deleniti quia, illum recusandae consectetur aspernatur sunt aperiam assumenda, commodi reiciendis maxime ex, incidunt optio harum? Minima at veniam, odit, placeat labore, id quo architecto iure deserunt accusamus libero soluta sapiente! Totam ab aspernatur, veritatis sed excepturi repellat accusamus delectus rerum earum, atque molestias nulla labore at, beatae error nemo ratione nam. Dolor aut fugit maxime, perspiciatis corporis dolorum ducimus.</p>
+
+    </section>
+
+
+
+      <section id="services" class="h-fit max-w-screen flex flex-col justify-start items-center pt-10 gap-4">
+
+        <h2 class="yazi text-2xl md:text-5xl text-red-500 mt-0 font-bold tracking-wider mb-4">OUR SERVICES</h2>
+
+        <div class="h-fit md:h-[500px] grid grid-cols-1 md:grid-cols-3 gap-4 w-11/12">
+            
+            <div class="servicediv flex flex-col justify-center items-center relative h-[400px] text-center">
+                <img src="imgs/services/service1.jpeg" class="absolute top-0 left-0 z-10 h-full w-full" alt="Service Image">
+                <h3 class="text-white font-bold text-2xl md:text-5xl">SERVICE 1</h3>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, porro.</p>
+            </div>
+
+            <div class="servicediv flex flex-col justify-center items-center relative h-[400px] text-center">
+                <img src="imgs/services/service2.jpeg" class="absolute top-0 left-0 z-10 h-full w-full" alt="Service Image">
+                <h3 class="text-white font-bold text-2xl md:text-5xl">SERVICE 2</h3>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, porro.</p>
+            </div>
+
+            <div class="servicediv flex flex-col justify-center items-center relative h-[400px] text-center">
+                <img src="imgs/services/service3.jpeg" class="absolute top-0 left-0 z-10 h-full w-full" alt="Service Image">
+                <h3 class="text-white font-bold text-2xl md:text-5xl">SERVICE 3</h3>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, porro.</p>
+            </div>
+           
+        </div>
+
+    </section>
+
+       <section id="contact" class="pb-8 bg-black text-white h-fit max-w-screen flex flex-col justify-start items-center pt-10 gap-4">
+
+         <h2 class="yazi text-2xl md:text-5xl mt-0 font-bold tracking-wider mb-4">CONTACT</h2>
+
+         <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0">
+            
+            <div class="text-xl h-fit flex flex-col justify-center items-center gap-4">
+            
+                   
+                    <i class="bi bi-house"></i>
+                    <p class="text-center">123 Main Street, City, Country</p>
+
+                    <i class="bi bi-telephone"></i>
+                    <p class="text-center">+1 234 567 890</p>
+
+                    <i class="bi bi-envelope"></i>
+                    <p class="text-center">info@example.com</p>
+            </div>
+
+            <div class=" h-fit flex flex-col justify-center items-center gap-4">
+                    
+                    <a href="#" class="hover:text-red-500">Home</a>
+                    <a href="#about" class="hover:text-red-500">About</a>
+                    <a href="#services" class="hover:text-red-500">Services</a>
+                    <a href="#contact" class="hover:text-red-500">Contact</a>
+            </div>
+
+            <div class="h-fit flex flex-col justify-center items-center gap-4">
+                    <h3 class="text-2xl font-bold">FOLLOW US</h3>
+                    <div class="flex flex-row gap-4">
+                        <i class="bi bi-facebook text-2xl hover:text-blue-600 cursor-pointer"></i>
+                        <i class="bi bi-twitter text-2xl hover:text-blue-400 cursor-pointer"></i>
+                        <i class="bi bi-instagram text-2xl hover:text-pink-500 cursor-pointer"></i>
+                        <i class="bi bi-linkedin text-2xl hover:text-blue-700 cursor-pointer"></i>
+                    </div>
+            </div>
+
+         </div>
+
+       
+    </section>
+
+    <p class="text-center w-screen p-4 bg-black text-white">All rights reserved &copy; 2024</p>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $('.servicediv').hover(function() {
+            $(this).find('h3, p').fadeIn(300);
+        }, function() {
+            $(this).find('h3, p').fadeOut(300);
+        });
+    });
+</script>
+
+<script>
+    const yazilar = document.querySelectorAll('.yazi');
+
+
+    const observer = new IntersectionObserver((entries) => {
+        
+        entries.forEach(entry => {
+            if (entry.target.classList.contains('yazi')) {
+                entry.target.classList.toggle('yazianimasyonu', entry.isIntersecting);
+            }
+        
+        });
+    }, {
+        root: null,
+        rootMargin: '0px 0px -100px 0px',
+        threshold: 0.1
+    });
+
+    yazilar.forEach(yazi => observer.observe(yazi));
+
+
+
+</script>
+</html>
